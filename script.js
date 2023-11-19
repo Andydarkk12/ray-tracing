@@ -73,6 +73,9 @@ class GradientCircle {
         const [x,y] = GradientCircle.calc_point_position(this.t, this.width/2, this.height/2, min_from_h_w/2);
         this.draw_gradient(x,y);
         this.t = this.t+1;
+
+
+        
     }
 }
 
@@ -86,7 +89,7 @@ function main()
         gradient_circle.next_frame();
     }
     
-    let play = setInterval(wrapper, 10);
+    let play = setInterval(wrapper, 1);
 }
 
 main();
